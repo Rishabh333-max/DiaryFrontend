@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        GET DIARY
+    </title>
+</head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+ 
+    body {
+        margin: 0px 0px;
+        background: url(./images/rps20.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: sans-serif;
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #links>a {
+        text-decoration: none;
+        color: blue;
+    }
+    #Diary{
+        width: 50%;
+        margin: 20px 25%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .singleDiary{
+        width: 80%;
+        margin: 20px 10%;
+        background-color: rgb(223, 226, 27);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 10px;
+    }
+    #forms{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media only screen and (max-width:1024px){
+        body {
+        margin: 0px 0px;
+        background: url(./images/rps20.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: sans-serif;
+    }
+
+    #header {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    #links {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #links>a {
+        font-size: 20px;
+        text-decoration: none;
+        color: blue;
+    }
+    #Diary{
+        width: 50%;
+        margin: 20px 25%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .singleDiary{
+        width: 80%;
+        margin: 20px 10%;
+        background-color: rgb(223, 226, 27);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 10px;
+    }
+    #forms{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    @media only screen and (max-width:768px){
+
+    body {
+        margin: 0px 0px;
+        background: url(./images/rps20.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: sans-serif;
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #links>a {
+        text-decoration: none;
+        color: blue;
+    }
+    #Diary{
+        width: 50%;
+        margin: 20px 25%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;}
+
+    .singleDiary{
+        width: 80%;
+        margin: 20px 10%;
+        background-color: rgb(223, 226, 27);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 10px;
+    }
+    #forms{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    @media only screen and (max-width:540px){
+    body {
+        margin: 0px 0px;
+        background: url(./images/rps20.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: sans-serif;
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #links>a {
+        text-decoration: none;
+        color: blue;
+    }
+    #Diary{
+        width: 50%;
+        margin: 20px 25%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .singleDiary{
+        width: 80%;
+        margin: 20px 10%;
+        background-color: rgb(223, 226, 27);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 10px;
+    }
+    #forms{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    @media only screen and (max-width:414px){
+    body {
+        margin: 0px 0px;
+        background: url(./images/rps20.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: sans-serif;
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    #links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #links>a {
+        font-size: 15px;
+        text-decoration: none;
+        color: blue;
+    }
+    #Diary{
+       min-width: 50%;
+        margin: 20px 25%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .singleDiary{
+        width: 80%;
+        margin: 20px 10%;
+        background-color: rgb(223, 226, 27);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 10px;
+    }
+    #forms{
+        width: 50%;
+        margin: 20px 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }}
+</style>
+
+<body>
+    <div id="header">
+        <div id="logo">DIARY</div>
+        <div id="links">
+           
+            <a href="createDiary.html">createDiary</a>
+            <a href="getDiary.html">getDiary</a>
+            <button id="logoutBTN">Logout</button>
+        </div>
+    </div>
+    <div id="forms">
+
+    </div>
+ <div id="Diary">
+   
+ </div>
+</body>
+<script>
+    if(!localStorage.getItem("UserInfo")){
+        window.location.href="login.html";
+    }
+var Diary=document.getElementById("Diary");
+var forms=document.getElementById("forms");
+var logoutBTN=document.getElementById("logoutBTN");
+//logoutBTN
+logoutBTN.addEventListener("click",function(e){
+    e.preventDefault();
+    localStorage.removeItem("UserInfo");
+    window.location.href="login.html";
+})
+ //extract user info from local storage
+ let UserInfo=JSON.parse(localStorage.getItem("UserInfo"));
+   //extract _id from userInfo
+    let UserId=UserInfo[0]._id;
+    //api url
+    let url="https://diaryappbackend04.herokuapp.com/getDiary/"+UserId;
+    //fetch
+    fetch(url,{
+        method:"GET"
+    })
+        
+    .then(res=>{
+        return res.json();
+    })
+    .then(data=>{
+        console.log(data);
+        renderList(data);
+    })
+    .catch(err=>{
+        console.log(err);
+    })
+    //create a function to delete Diary
+    function deleteIt(UserId,diaryId){
+        let url="https://diaryappbackend04.herokuapp.com/deleteDiary/"+UserId+"/"+diaryId;
+        //fetch url here
+        fetch(url,{
+            method:"DELETE"
+        })
+        .then(response=>{
+            return response.json();
+        })
+        .then(data=>{
+            console.log(data);
+            renderList(data);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+    }
+    //editIt function here
+    function editIt(e,diaryId){
+        e.preventDefault();
+        var title=document.getElementById("title");
+        var description=document.getElementById("description");
+        var date=document.getElementById("date");
+        let payload={
+            title:title.value,
+            description:description.value,
+            date:date.value,
+            diaryId:diaryId,
+            UserId:UserId
+        }
+        console.log(payload);
+
+        let url="https://diaryappbackend04.herokuapp.com/updateDiary";
+
+        //fetch
+        fetch(url,{
+            method:"PATCH",
+            headers:{
+                'Content-Type':"application/json"
+            },
+            body:JSON.stringify(payload)
+        })
+        .then(res=>{
+            return res.json();
+        })
+        .then(data=>{
+            console.log(data);
+            renderList(data);
+            forms.innerHTML="";
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    } 
+    //editInputBox function here
+    function editInputBox(UserId,diaryId,titleArray,descriptionArray,date){
+        let title=titleArray.join(" ");
+        console.log(title)
+        let description=descriptionArray.join(" ");
+        console.log(description)
+
+        console.log("function called");
+        var html=`  <form>
+                        <input type="text" placeholder="Diary Title" id="title" value="${title}"><br />
+                        <input type="text" placeholder="Diary Description" id="description" value="${description}"><br />
+                        <input type="date" placeholder="date" id="deadline" value=${date}><br />
+                        <button id="EditDiaryBtn" onClick=editIt(event,${JSON.stringify(diaryId)})>Edit Diary</button>
+                    </form>`;
+
+        forms.innerHTML=html;
+    }
+    
+    function renderList(data){
+        let res="";
+        for(let i=0;i<data.length;i++){
+            let single=data[i];
+            let UserId=single.UserId;
+            console.log("UserId=",UserId);
+            let diaryId=single._id;
+            console.log("diaryId=",diaryId);
+
+            console.log("id=",diaryId);
+            console.log("single=",single);
+            let titleArray=single.title.split(" ");
+            console.log(titleArray);
+            let descriptionArray=single.description.split(" ")
+            
+
+            var html=`  <div class="singleDiary">
+         <div class="info">
+             <div class="title">
+                 ${single.title}
+             </div>
+             <div class="description">${single.description}</div>
+             <div class="deadline">${single.date}</div>
+         </div>
+         <div class="buttons">
+             <button onClick=editInputBox(${JSON.stringify(UserId)},${JSON.stringify(diaryId)},${JSON.stringify(titleArray)},${JSON.stringify(descriptionArray)},${JSON.stringify(single.date)})>Edit</button>
+             <button onclick=deleteIt(${JSON.stringify(UserId)},${JSON.stringify(diaryId)})>Delete</button>
+         </div>
+     </div>`;
+     res+=html;
+    }
+    diaryId.innerHTML=res;
+}
+</script>
+
+</html>
+
+
+
